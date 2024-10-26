@@ -4,10 +4,10 @@ import sql from '$lib/server/database';
 export async function load() {
     const rows = await sql`
     SELECT
-        containerNumber,
-        nameOfShip,
-        containerSize,
-        dateContainerShipped
+        containernumber,
+        nameOfship,
+        containersize,
+        dateContainershipped
     FROM
         containers`;
 
